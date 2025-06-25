@@ -1,11 +1,11 @@
 import React from 'react'
 
-const NewsfeedPage = () => {
+const NewsFeedPage = () => {
   return (
     <div>
-      
+      newsFeed page
     </div>
   )
 }
 
-export default NewsfeedPage
+export default NewsFeedPage
