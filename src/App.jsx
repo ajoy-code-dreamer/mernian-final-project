@@ -8,6 +8,7 @@ import ProductDetailsPage from "./pages/ProductDetailsPage";
 import ProductPage from "./pages/ProductPage";
 import CheckoutPage from "./pages/CheckoutPage";
 import CommonLayout from "./components/CommonLayout";
+import NewsFeedPage from "./pages/NewsFeedPage";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/product-details" element={<ProductDetailsPage />} />
         <Route path="/product" element={<ProductPage />} />
+        <Route path="/news-feed" element={<NewsFeedPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
       </Route>
     </Routes>
