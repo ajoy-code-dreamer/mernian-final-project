@@ -1,14 +1,20 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import Navbar from "./commonComponents/Navbar";
-import Footer from "./commonComponents/Footer";
+import LeftProfileBar from "./commonComponents/LeftProfileBar";
+import RightSettingsBar from "./commonComponents/RightSettingsBar";
 
 const CommonLayout = () => {
   return (
     <>
+    <div>
       <Navbar />
+      <div className="flex justify-between items-start">
+      <LeftProfileBar/>
       <Outlet />
-      <Footer />
+      <RightSettingsBar/>
+      </div>
+    </div>
     </>
   );
 };
