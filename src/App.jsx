@@ -7,7 +7,6 @@ import AboutPage from "./pages/AboutPage";
 import ProductDetailsPage from "./pages/ProductDetailsPage";
 import ProductPage from "./pages/ProductPage";
 import CheckoutPage from "./pages/CheckoutPage";
-import NewsFeedPage from "./pages/NewsFeedPage";
 import CommonLayout from "./components/CommonLayout";
 
 
@@ -23,7 +22,6 @@ function App() {
         <Route path="/product-details" element={<ProductDetailsPage />} />
         <Route path="/product" element={<ProductPage />} />
         <Route path="/checkout" element={<CheckoutPage />} />
-        <Route path="/news-feed" element={<NewsFeedPage />} /> F
       </Route>
     </Routes>
   );
