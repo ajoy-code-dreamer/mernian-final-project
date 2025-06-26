@@ -1,7 +1,9 @@
 import React from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaSms, FaTools } from "react-icons/fa";
 import { IoSearchSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import CartIcon from "../../icons/CartIcon";
+import BellIcon from "../../icons/BellIcon";
 
 const Navbar = () => {
   return (
@@ -29,7 +31,7 @@ const Navbar = () => {
             <IoSearchSharp />
           </span>
         </div>
-        <div className="flex justify-between items-center">
+        <div className="flex justify-end items-center gap-[33px]">
           <div className="w-[111px]">
             <div className="text-xs font-['Poppins'] font-normal text-white flex justify-between items-center pb-[3px]">
               <span>Next</span>
@@ -37,8 +39,20 @@ const Navbar = () => {
             </div>
             <div className="w-full h-[3px] rounded-[7px] bg-[#4E4AC8] relative after:absolute after:content-[''] after:top-0 after:left-0 after:bg-[#41EFFF] after:w-[83px] after:h-full"></div>
           </div>
-          <div className="w-[111px]">icon</div>
-          <div className="w-[111px] justify-self-end">settings</div>
+          <div className="flex items-center gap-[30px] text-[#7A77FD] relative after:content-[''] after:absolute after:top-1/2 after:right-[-17px] after:translate-y-[-50%] after:bg-[#7A77FD] after:h-8 after:w-px before:content-[''] before:absolute before:top-1/2 before:left-[-17px] before:translate-y-[-50%] before:bg-[#7A77FD] before:h-8 before:w-px">
+            <span className="cursor-pointer">
+              <CartIcon />
+            </span>
+            <span className="cursor-pointer">
+              <FaSms />
+            </span>
+            <span className="cursor-pointer">
+              <BellIcon />
+            </span>
+          </div>
+          <div className="text-[#7A77FD] cursor-pointer">
+            <FaTools />
+          </div>
         </div>
       </div>
     </nav>
