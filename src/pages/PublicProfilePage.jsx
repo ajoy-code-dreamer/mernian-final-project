@@ -1,10 +1,14 @@
 import React from 'react'
+import ProfileBanner from '../components/ProfileBanner'
+import Container from '../components/commonComponents/Container'
 
 const PublicProfilePage = () => {
   return (
-    <div>
-      public page
-    </div>
+    <Container>
+      <div>
+      <ProfileBanner/>
+      </div>
+    </Container>
   )
 }
 
