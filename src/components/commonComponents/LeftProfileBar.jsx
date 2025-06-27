@@ -1,7 +1,16 @@
 import React from "react";
-import { FaLayerGroup, FaNewspaper, FaUserFriends } from "react-icons/fa";
+import {
+  FaAlgolia,
+  FaGopuram,
+  FaLayerGroup,
+  FaNewspaper,
+  FaSignOutAlt,
+  FaUserFriends,
+} from "react-icons/fa";
 import { FaHandsAslInterpreting } from "react-icons/fa6";
 import { Link } from "react-router-dom";
+
+
 const LeftProfileBar = () => {
   return (
     <div className="w-1/5 bg-white h-screen">
@@ -22,12 +31,12 @@ const LeftProfileBar = () => {
             www.zipcyber.com
           </Link>
         </div>
-        <div className="flex justify-center items-center gap-12 text-center text-['Poppins'] mt-[42px] relative after:content-[''] after:absolute after:top-1/2 after:right-[151px] after:translate-y-[-50%] after:bg-[#AFB0C0] after:h-[25px] after:w-px before:content-[''] before:absolute before:top-1/2 before:left-[145px] before:translate-y-[-50%] before:bg-[#AFB0C0] before:h-[25px] before:w-px">
+        <div className="flex justify-center items-center gap-12 text-center text-['Poppins'] mt-[42px] ">
           <div>
             <h3 className="font-bold text-sm text-black">930</h3>
             <p className="font-medium text-xs text-[#AFB0C0]">Friends</p>
           </div>
-          <div>
+          <div className="shrink-0 relative after:content-[''] after:absolute after:top-1/2 after:right-[-25px] after:translate-y-[-50%] after:bg-[#AFB0C0] after:h-[25px] after:w-px before:content-[''] before:absolute before:top-1/2 before:left-[-24px] before:translate-y-[-50%] before:bg-[#AFB0C0] before:h-[25px] before:w-px">
             <h3 className="font-bold text-sm text-black">87</h3>
             <p className="font-medium text-xs text-[#AFB0C0]">Posts</p>
           </div>
@@ -38,7 +47,7 @@ const LeftProfileBar = () => {
         </div>
         <div className="mt-16 pr-2 pl-4">
           <ul className="font-['Poppins'] text-sm font-semibold flex flex-col gap-1">
-            <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 rounded-[10px] cursor-pointer ">
+            <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 active:text-white active:bg-[#23D2E2] rounded-[10px] cursor-pointer ">
               <Link className="flex items-center gap-7" to="/">
                 <span className="text-xl">
                   <FaNewspaper />
@@ -46,15 +55,15 @@ const LeftProfileBar = () => {
                 Newsfeed
               </Link>
             </li>
-            <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 rounded-[10px] cursor-pointer ">
+            <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 active:text-white active:bg-[#23D2E2] rounded-[10px] cursor-pointer ">
               <Link className="flex items-center gap-7" to="/">
                 <span className="text-xl">
-                  <FaLayerGroup />
+                  <FaGopuram />
                 </span>
-                Videos
+                Profile
               </Link>
             </li>
-            <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 rounded-[10px] cursor-pointer ">
+            <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 active:text-white active:bg-[#23D2E2] rounded-[10px] cursor-pointer ">
               <Link className="flex items-center gap-7" to="/">
                 <span className="text-xl">
                   <FaLayerGroup />
@@ -62,15 +71,15 @@ const LeftProfileBar = () => {
                 Groups
               </Link>
             </li>
-            <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 rounded-[10px] cursor-pointer ">
+            <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 active:text-white active:bg-[#23D2E2] rounded-[10px] cursor-pointer ">
               <Link className="flex items-center gap-7" to="/">
                 <span className="text-xl">
-                  <FaLayerGroup />
+                  <FaAlgolia />
                 </span>
                 Photos
               </Link>
             </li>
-            <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 rounded-[10px] cursor-pointer ">
+            <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 active:text-white active:bg-[#23D2E2] rounded-[10px] cursor-pointer ">
               <Link className="flex items-center gap-7" to="/">
                 <span className="text-xl">
                   <FaUserFriends />
@@ -78,7 +87,7 @@ const LeftProfileBar = () => {
                 Friends
               </Link>
             </li>
-            <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 rounded-[10px] cursor-pointer ">
+            <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 active:text-white active:bg-[#23D2E2] rounded-[10px] cursor-pointer ">
               <Link className="flex items-center gap-7" to="/">
                 <span className="text-xl">
                   <FaHandsAslInterpreting />
@@ -86,10 +95,10 @@ const LeftProfileBar = () => {
                 Friends Request
               </Link>
             </li>
-            <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 rounded-[10px] cursor-pointer ">
+            <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 active:text-white active:bg-[#23D2E2] rounded-[10px] cursor-pointer ">
               <Link className="flex items-center gap-7" to="/">
                 <span className="text-xl">
-                  <FaLayerGroup />
+                  <FaSignOutAlt />
                 </span>
                 Logout
               </Link>
