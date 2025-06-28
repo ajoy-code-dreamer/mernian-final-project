@@ -8,7 +8,7 @@ import SocialIcon from "./commonComponents/SocialIcon";
 
 const ProfileBanner = () => {
   return (
-    <div className="w-full bg-white pb-[18px] relative">
+    <div className="w-full bg-white pb-[18px] relative rounded-[10px]">
       <div
         className="mt-8 w-full h-[300px] bg-[#45437F] rounded-t-[10px]">
         {/* <img src="" alt="image" /> */}
