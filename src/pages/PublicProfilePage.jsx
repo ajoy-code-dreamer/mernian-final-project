@@ -16,7 +16,10 @@ const PublicProfilePage = () => {
         <AboutMe/>
         <PhotosCard/>
         </div>
-        <div>
+        <div className='flex gap-[15px] flex-col'>
+        <PostCard/>
+        <PostCard/>
+        <PostCard/>
         <PostCard/>
         </div>
       </div>
