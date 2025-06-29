@@ -3,6 +3,7 @@ import ProfileBanner from '../components/ProfileBanner'
 import Container from '../components/commonComponents/Container'
 import AboutMe from '../components/AboutMe'
 import PhotosCard from '../components/PhotosCard'
+import PostCard from '../components/commonComponents/PostCard'
 
 const PublicProfilePage = () => {
   return (
@@ -10,13 +11,13 @@ const PublicProfilePage = () => {
       <div>
       <ProfileBanner/>
       </div>
-      <div className='flex mt-[33px]'>
+      <div className='flex mt-[33px] gap-[15px]'>
         <div>
         <AboutMe/>
         <PhotosCard/>
         </div>
         <div>
-
+        <PostCard/>
         </div>
       </div>
     </Container>
