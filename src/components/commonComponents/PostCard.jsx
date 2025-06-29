@@ -1,9 +1,12 @@
 import React from "react";
+import ThumbsUpIcon from "../../icons/ThumbsUpIcon";
+import ShareIcon from "../../icons/ShareIcon";
+import CommentIcon from "../../icons/CommentIcon";
 
 const PostCard = () => {
   return (
     <div className='w-[585px] rounded-[15px] bg-white font-["Poppins"]'>
-      <div className="py-[15px] pl-[20px] pr-[41px] ">
+      <div className="py-[15px] pl-5 pr-[41px] ">
         <div className="flex items-center justify-between mb-[23px]">
           <div className="flex items-center gap-3">
             <div className="w-[50px] h-[50px] rounded-full bg-[#615DFA] border-[3px] border-[#D9D9D9]">
@@ -38,9 +41,18 @@ const PostCard = () => {
             <span>2 Shares</span>
         </div>
       </div>
-      <div className="w-full pt-[23px] border-t border-[#D9D9D9]">
-        <div>
-
+      <div className="w-full pt-[23px] border-t border-[#D9D9D9] flex items-center justify-between pb-5 pl-5 pr-[41px] font-bold text-xs text-[#D9D9D9] ">
+        <div className="flex items-center gap-4 cursor-pointer">
+          <div><ThumbsUpIcon/></div>
+          <span>Like</span>
+        </div>
+        <div className="flex items-center gap-4 cursor-pointer">
+          <div><CommentIcon/></div>
+          <span>Comment</span>
+        </div>
+        <div className="flex items-center gap-4 cursor-pointer">
+          <div><ShareIcon/></div>
+          <span>Share</span>
         </div>
       </div>
     </div>
