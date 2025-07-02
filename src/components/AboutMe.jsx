@@ -5,7 +5,7 @@ const AboutMe = () => {
     <div className='max-w-[283px] pl-[27px] pr-[26px] py-[29px] bg-white rounded-[15px] font-"Poppins"'>
       <div className="flex items-center justify-between mb-[29px] font-bold text-[#3E3F5E] text-sm">
         <h3>About Me</h3>
-        <span>...</span>
+        <span className="cursor-pointer">...</span>
       </div>
       <p className="text-sm text-[#AFB0C0] font-normal">
         Hi! My name is A B M Shawon Islam but some people may know me as

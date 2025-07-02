@@ -4,6 +4,7 @@ import Container from '../components/commonComponents/Container'
 import AboutMe from '../components/AboutMe'
 import PhotosCard from '../components/PhotosCard'
 import PostCard from '../components/commonComponents/PostCard'
+import VideosCard from '../components/VideosCard'
 
 const PublicProfilePage = () => {
   return (
@@ -15,6 +16,7 @@ const PublicProfilePage = () => {
         <div className='flex gap-[15px] flex-col'>
         <AboutMe/>
         <PhotosCard/>
+        <VideosCard/>
         </div>
         <div className='flex gap-[15px] flex-col'>
         <PostCard/>
