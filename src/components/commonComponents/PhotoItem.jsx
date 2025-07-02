@@ -1,9 +1,9 @@
 import React, { Children } from "react";
 
-const PhotoItem = ({ Children }) => {
+const PhotoItem = ({ children,background='#615DFA' }) => {
   return (
-    <div className="w-[105px] h-[100px] bg-[#615DFA] rounded-[15px]">
-      {Children}
+    <div style={"background='{}'"} className="w-[105px] h-[100px] rounded-[15px]">
+      {children}
     </div>
   );
 };

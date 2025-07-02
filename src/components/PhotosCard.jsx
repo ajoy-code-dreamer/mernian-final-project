@@ -15,7 +15,9 @@ const PhotosCard = () => {
         <PhotoItem />
         <PhotoItem />
         <PhotoItem>
+          <div className="w-full h-full flex items-center justify-center">
             <span className="text-white">32+</span>
+          </div>
         </PhotoItem>
       </div>
     </div>
