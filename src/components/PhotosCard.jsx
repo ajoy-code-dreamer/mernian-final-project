@@ -10,11 +10,11 @@ const PhotosCard = () => {
       </div>
       <div className="flex gap-[15px] flex-wrap">
         <PhotoItem />
-        <PhotoItem background="#24234B" />
+        <PhotoItem bg='#24234B' />
         <PhotoItem />
-        <PhotoItem background="#24234B" />
+        <PhotoItem bg='#24234B' />
         <PhotoItem />
-        <PhotoItem background="#41EFFF">
+        <PhotoItem bg='#41EFFF'>
           <div className="w-full h-full flex items-center justify-center">
             <span className="text-white text-xs font-bold">32+</span>
           </div>
