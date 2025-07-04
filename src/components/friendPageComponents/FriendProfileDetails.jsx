@@ -1,12 +1,12 @@
 import React from 'react'
-import FriendIdName from './FriendProfileName'
-import FriendIdWebLInk from './FriendProfileWebLInk'
+import FriendProfileWebLInk from './FriendProfileWebLInk'
+import FriendProfileName from './FriendProfileName'
 
 const FriendProfileDetails = () => {
   return (
     <div className="text-center font-['Poppins'] ">
-      <FriendIdName text='AJOY SAHA'/>
-      <FriendIdWebLInk to='https://www.zipcyber.com' text='www.zipcyber.com'/>
+      <FriendProfileName text='AJOY SAHA'/>
+      <FriendProfileWebLInk to='https://www.zipcyber.com' text='www.zipcyber.com'/>
     </div>
   )
 }

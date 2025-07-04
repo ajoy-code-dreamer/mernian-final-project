@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ProfileSummery = () => {
+const ProfileSummery = ({marginT='0'}) => {
   return (
-    <div className="flex justify-center items-center gap-12 text-center text-['Poppins'] ">
+    <div style={{marginTop:marginT}} className="flex justify-center items-center gap-12 text-center text-['Poppins']">
           <div>
             <h3 className="font-bold text-sm text-black">930</h3>
             <p className="font-medium text-xs text-[#AFB0C0]">Friends</p>

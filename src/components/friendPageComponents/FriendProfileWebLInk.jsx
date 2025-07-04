@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const FriendIdWebLInk = ({to='/',text}) => {
+const FriendProfileWebLInk = ({to='/',text, textSize='12px' ,fontWeight='medium'}) => {
   return (
     <Link 
-    className="font-medium text-[#AFB0C0] text-xs"
+    className={`font-[${fontWeight}]] text-[#AFB0C0] text-[${textSize}] flex justify-center`}
     to={to}
     target="blank"
     >
@@ -13,4 +13,4 @@ const FriendIdWebLInk = ({to='/',text}) => {
   )
 }
 
-export default FriendIdWebLInk
+export default FriendProfileWebLInk

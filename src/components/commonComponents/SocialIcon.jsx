@@ -2,9 +2,9 @@ import React from "react";
 import { FaFacebookSquare, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
-const SocialIcon = () => {
+const SocialIcon = ({marginT='0px',marginB='0px'}) => {
   return (
-    <ul className="flex items-center gap-3">
+    <ul style={{marginTop:marginT, marginBottom:marginB}} className={`flex items-center gap-3 justify-center `}>
       <li className="w-10 h-10 rounded-lg bg-[#3763d2] text-white text-base flex items-center justify-center">
         <Link to="">
           <FaFacebookSquare />
