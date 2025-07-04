@@ -1,9 +1,9 @@
 import React from "react";
 import Container from "./commonComponents/Container";
 import ProfileSummery from "./commonComponents/ProfileSummery";
-import ProfileName from "./commonComponents/ProfileName";
 import SocialIcon from "./commonComponents/SocialIcon";
 import Button from "./Button";
+import FriendProfileDetails from "./friendPageComponents/FriendProfileDetails";
 
 const ProfileBanner = () => {
   return (
@@ -17,11 +17,11 @@ const ProfileBanner = () => {
       </div>
       <div className="flex justify-end gap-4 absolute top-[275px] right-[27px]">
         <Button text='Add Friend'/>
-        <Button bg='#23D2E2' paddingX='38px' text='Send Message'/>
+        <Button bgColor='#23D2E2' paddingX='38px' text='Send Message'/>
       </div>
       <div className="flex items-center justify-between pl-[65px] pr-[90px] pt-[18px]">
         <ProfileSummery/>
-        <ProfileName/>
+        <FriendProfileDetails/>
         <SocialIcon/>
       </div>
 

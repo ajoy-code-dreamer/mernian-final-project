@@ -1,8 +1,8 @@
 import React, { Children } from "react";
 
-const PhotoItem = ({ children , bg='#615DFA' }) => {
+const PhotoItem = ({ children , bgColor='#615DFA' }) => {
   return (
-    <div style={{background:bg}} className={`w-[105px] h-[100px] rounded-[15px] `}>
+    <div className={`bg-[${bgColor}] w-[105px] h-[100px] rounded-[15px] `}>
       {children}
     </div>
   );

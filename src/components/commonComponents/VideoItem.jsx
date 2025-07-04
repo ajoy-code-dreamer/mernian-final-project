@@ -1,10 +1,9 @@
 import React from "react";
 
-const VideoItem = ({children,bg='#615DFA'}) => {
+const VideoItem = ({children,bgColor='#615DFA'}) => {
   return (
     <div
-    style={{background:bg}} 
-      className={`w-full h-[100px] rounded-[15px] cursor-pointer `}
+      className={`bg-[${bgColor}] w-full h-[100px] rounded-[15px] cursor-pointer `}
     >
       {children}
     </div>

@@ -9,8 +9,8 @@ import {
 } from "react-icons/fa";
 import { FaHandsAslInterpreting } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import ProfileName from "./ProfileName";
 import ProfileSummery from "./ProfileSummery";
+import FriendProfileDetails from "../friendPageComponents/FriendProfileDetails";
 
 
 const LeftProfileBar = () => {
@@ -23,7 +23,7 @@ const LeftProfileBar = () => {
           {/* <img src="" alt="images" /> */}
         </div>
         <div className="mt-3">
-          <ProfileName/>
+          <FriendProfileDetails/>
         </div>
         <div className="mt-[42px] ">
           <ProfileSummery/>

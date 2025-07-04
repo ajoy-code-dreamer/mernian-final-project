@@ -15,7 +15,7 @@ const VideosCard = () => {
             <span className='text-white text-xs w-[40px] h-[40px] rounded-full flex items-center justify-center bg-[#181828] border-2 border-[#41EFFF]'><FaPlay /></span> 
             </div>
         </VideoItem >
-        <VideoItem   bg='#24234B' >
+        <VideoItem   bgColor='#24234B' >
             <div className='flex items-center justify-center h-full w-full'>
             <span className='text-white text-xs w-[40px] h-[40px] rounded-full flex items-center justify-center bg-[#181828] border-2 border-[#41EFFF]'><FaPlay /></span> 
             </div>
