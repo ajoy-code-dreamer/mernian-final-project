@@ -1,11 +1,11 @@
 import React from "react";
-import Container from "./commonComponents/Container";
-import ProfileSummery from "./commonComponents/ProfileSummery";
-import SocialIcon from "./commonComponents/SocialIcon";
-import Button from "./Button";
-import FriendProfileDetails from "./friendPageComponents/FriendProfileDetails";
-import ProfilePicture from "./friendPageComponents/ProfilePicture";
-import CoverPicture from "./friendPageComponents/CoverPicture";
+import CoverPicture from "./CoverPicture";
+import ProfilePicture from "./ProfilePicture";
+import Button from "../Button";
+import ProfileSummery from "./ProfileSummery";
+import FriendProfileDetails from "../friendPageComponents/FriendProfileDetails";
+import SocialIcon from "./SocialIcon";
+
 
 const ProfileBanner = () => {
   return (

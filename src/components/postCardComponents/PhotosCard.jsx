@@ -1,5 +1,5 @@
 import React from "react";
-import PhotoItem from "./commonComponents/PhotoItem";
+import PhotoItem from "./PhotoItem";
 
 const PhotosCard = () => {
   return (

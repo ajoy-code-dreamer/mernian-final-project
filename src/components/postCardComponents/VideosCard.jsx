@@ -1,5 +1,5 @@
 import React from 'react'
-import VideoItem from './commonComponents/VideoItem'
+import VideoItem from './VideoItem'
 import { FaPlay } from 'react-icons/fa'
 
 const VideosCard = () => {

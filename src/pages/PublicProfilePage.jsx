@@ -1,10 +1,10 @@
 import React from 'react'
-import ProfileBanner from '../components/ProfileBanner'
 import Container from '../components/commonComponents/Container'
-import AboutMe from '../components/AboutMe'
-import PhotosCard from '../components/PhotosCard'
-import PostCard from '../components/commonComponents/PostCard'
-import VideosCard from '../components/VideosCard'
+import AboutMe from '../components/publicProfilePageComponents/AboutMe'
+import PhotosCard from '../components/postCardComponents/PhotosCard'
+import PostCard from '../components/postCardComponents/PostCard'
+import VideosCard from '../components/postCardComponents/VideosCard'
+import ProfileBanner from '../components/publicProfilePageComponents/ProfileBanner'
 
 const PublicProfilePage = () => {
   return (

@@ -9,8 +9,8 @@ import {
 } from "react-icons/fa";
 import { FaHandsAslInterpreting } from "react-icons/fa6";
 import { Link } from "react-router-dom";
-import ProfileSummery from "./ProfileSummery";
 import FriendProfileDetails from "../friendPageComponents/FriendProfileDetails";
+import ProfileSummery from "../publicProfilePageComponents/ProfileSummery";
 
 
 const LeftProfileBar = () => {

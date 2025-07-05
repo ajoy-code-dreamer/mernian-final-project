@@ -1,9 +1,10 @@
 import React from "react";
-import Container from "../components/commonComponents/Container";
 import SearchIcon from "../icons/SearchIcon";
-import ProfileBanner from "../components/ProfileBanner";
-import AddFriendCard from "../components/friendPageComponents/AddFriendCard";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import Container from "../components/commonComponents/Container";
+import ProfileBanner from "../components/publicProfilePageComponents/ProfileBanner";
+import AddFriendCard from "../components/friendPageComponents/AddFriendCard";
+
 
 const FriendPage = () => {
   return (

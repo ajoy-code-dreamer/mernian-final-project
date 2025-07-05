@@ -1,24 +1,26 @@
 import React from 'react'
-import CoverPicture from './CoverPicture'
-import ProfilePicture from './ProfilePicture'
-import SocialIcon from '../commonComponents/SocialIcon'
 import Button from '../Button'
 import FriendProfileName from './FriendProfileName'
 import FriendProfileWebLInk from './FriendProfileWebLInk'
-import ProfileSummery from '../commonComponents/ProfileSummery'
+import ProfilePicture from '../publicProfilePageComponents/ProfilePicture'
+import CoverPicture from '../publicProfilePageComponents/CoverPicture'
+import SocialIcon from '../publicProfilePageComponents/SocialIcon'
+import ProfileSummery from '../publicProfilePageComponents/ProfileSummery'
+import CardButton from '../CardButton'
+
 
 const AddFriendCard = ({}) => {
   return (
     <div className='min-w-[284px] rounder-[15px] bg-white overflow-hidden'>
-        <CoverPicture height='83px' marginT='0' roundedT='15px' />
+        <CoverPicture height='83px' marginT='0' rounded='15px 15px 0 0' />
         <ProfilePicture width='90px' height='90px' marginT='-45px' borderWidth='7px'/>
         <FriendProfileName text='ABM Shawon Islam' textSize='15px' fontWeight='medium'/>
         <FriendProfileWebLInk text='abm@gmail.com' fontWeight='normal' textSize='17px'/>
         <ProfileSummery marginT='22px'/>
         <SocialIcon marginT='26px' marginB='30px'/>
         <div className='flex justify-between'>
-            <button className='w-full px-5 py-3 bg-[#615DFA] font-[Poppins] text-white font-semibold text-[13px] rounded-bl-[15px] cursor-pointer'>Add Friend</button>
-            <button className='w-full px-5 py-3 bg-[#23D2E2] font-[Poppins] text-white font-semibold text-[13px] rounded-br-[15px] cursor-pointer'>Send Message</button>
+            <CardButton text='Add Friend'/>
+            <CardButton text='Send Message' rounded='0 0 15px 0' bgColor='#23D2E2'/>
         </div>
     </div>
   )
