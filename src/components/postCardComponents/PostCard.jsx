@@ -1,9 +1,29 @@
-import React, { Children } from "react";
+import React, { useEffect, useRef, useState, } from "react";
 import ThumbsUpIcon from "../../icons/ThumbsUpIcon";
 import ShareIcon from "../../icons/ShareIcon";
 import CommentIcon from "../../icons/CommentIcon";
+import { Link } from "react-router-dom";
 
 const PostCard = ({ children }) => {
+  const [editPostOpen, setEditPostOpen] = useState(false);
+  let editPostRef = useRef();
+
+  useEffect(() => {
+      let clickOutSide = (event) => {
+        if (
+          editPostRef.current &&
+          !editPostRef.current.contains(event.target)
+        ) {
+          setEditPostOpen(false);
+        }
+      };
+      document.addEventListener("click", clickOutSide);
+    }, []);
+  
+    let handleEditPost = () => {
+      setEditPostOpen(!editPostOpen);
+    };
+
   return (
     <div className='w-[585px] rounded-[15px] bg-white font-["Poppins"]'>
       <div className="py-[15px] pl-5 pr-[41px] ">
@@ -21,9 +41,29 @@ const PostCard = ({ children }) => {
               </p>
             </div>
           </div>
-          <span className="font-normal text-[30px] text-black cursor-pointer">
+          <div ref={editPostRef} className="relative">
+          <button  className="font-normal text-[30px] text-black cursor-pointer" onClick={handleEditPost}>
             ...
-          </span>
+          </button>
+          {editPostOpen && (
+            <div className="w-[140px] bg-white text-black rounded-lg shadow-lg p-4 z-10 absolute top-12 right-0 duration-300">
+              <ul className="font-['Poppins'] text-xs font-normal">
+                <li className="px-2 py-2 rounded-lg duration-300 hover:bg-[#F7F7FB]">
+                  <Link>Edit Post</Link>
+                </li>
+                <li className="px-2 py-2 rounded-lg duration-300 hover:bg-[#F7F7FB]">
+                  <Link>Delete Post</Link>
+                </li>
+                <li className="px-2 py-2 rounded-lg duration-300 hover:bg-[#F7F7FB]">
+                  <Link>Report Post</Link>
+                </li>
+                <li className="px-2 py-2 rounded-lg duration-300 hover:bg-[#F7F7FB]">
+                  <Link>Report Author</Link>
+                </li>
+              </ul>
+            </div>
+          )}
+          </div>
         </div>
         <p className="text-black text-xs font-normal">
           I have great news to share with you all! I’ve been officially made a

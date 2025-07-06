@@ -11,11 +11,12 @@ import { FaHandsAslInterpreting } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import FriendProfileDetails from "../friendPageComponents/FriendProfileDetails";
 import ProfileSummery from "../publicProfilePageComponents/ProfileSummery";
+import { IoStorefront } from "react-icons/io5";
 
 
 const LeftProfileBar = () => {
   return (
-    <div className="w-[20%] bg-white h-full">
+    <div className="w-[20%] bg-white !min-h-full">
       <div className="w-full h-[75px] bg-[#45437F]">
           {/* <img src="" alt="image" /> */}
         </div>
@@ -52,6 +53,14 @@ const LeftProfileBar = () => {
                   <FaLayerGroup />
                 </span>
                 Groups
+              </Link>
+            </li>
+            <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 active:text-white active:bg-[#23D2E2] rounded-[10px] cursor-pointer ">
+              <Link className="flex items-center gap-7" to="/store">
+                <span className="text-xl">
+                  <IoStorefront />
+                </span>
+                Store
               </Link>
             </li>
             <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 active:text-white active:bg-[#23D2E2] rounded-[10px] cursor-pointer ">
