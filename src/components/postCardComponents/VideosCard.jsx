@@ -10,21 +10,9 @@ const VideosCard = () => {
         <span className='cursor-pointer'>...</span>
       </div>
       <div className="flex gap-[15px] flex-wrap">
-        <VideoItem   >
-            <div className='flex items-center justify-center h-full w-full'>
-            <span className='text-white text-xs w-[40px] h-[40px] rounded-full flex items-center justify-center bg-[#181828] border-2 border-[#41EFFF]'><FaPlay /></span> 
-            </div>
-        </VideoItem >
-        <VideoItem   bgColor='#24234B' >
-            <div className='flex items-center justify-center h-full w-full'>
-            <span className='text-white text-xs w-[40px] h-[40px] rounded-full flex items-center justify-center bg-[#181828] border-2 border-[#41EFFF]'><FaPlay /></span> 
-            </div>
-        </VideoItem >
-        <VideoItem   >
-            <div className='flex items-center justify-center h-full w-full'>
-            <span className='text-white text-xs w-[40px] h-[40px] rounded-full flex items-center justify-center bg-[#181828] border-2 border-[#41EFFF]'><FaPlay /></span> 
-            </div>
-        </VideoItem >
+        <VideoItem/>
+        <VideoItem bgColor='#24234B'/>
+        <VideoItem/>
       </div>
     </div>
   )

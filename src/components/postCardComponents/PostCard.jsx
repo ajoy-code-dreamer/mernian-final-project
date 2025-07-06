@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Children } from "react";
 import ThumbsUpIcon from "../../icons/ThumbsUpIcon";
 import ShareIcon from "../../icons/ShareIcon";
 import CommentIcon from "../../icons/CommentIcon";
 
-const PostCard = () => {
+const PostCard = ({ children }) => {
   return (
     <div className='w-[585px] rounded-[15px] bg-white font-["Poppins"]'>
       <div className="py-[15px] pl-5 pr-[41px] ">
@@ -21,37 +21,46 @@ const PostCard = () => {
               </p>
             </div>
           </div>
-          <span className="font-normal text-[30px] text-black cursor-pointer">...</span>
+          <span className="font-normal text-[30px] text-black cursor-pointer">
+            ...
+          </span>
         </div>
-        <p className="text-black text-xs font-normal border-b border-[#D9D9D9] pb-[29px]">
+        <p className="text-black text-xs font-normal">
           I have great news to share with you all! I’ve been officially made a
           game streaming verified partner by Streamy http://lyt.ly/snej25. What
           does this mean? I’ll be uploading new content every day, improving the
           quality and I’m gonna have access to games a month before the official
           release. This is a dream come true, thanks to all for the support!!!
         </p>
-        <div className="flex items-center justify-between mt-[15px] text-xs font-bold text-black">
-            <div className="flex items-center gap-[13px]">
-                <div>
-                    <img src="/images/emoji.png" alt="emoji" />
-                </div>
-                <span>12</span>
-            </div>
-            <span>13 Comments</span>
-            <span>2 Shares</span>
+      </div>
+      <div>{children}</div>
+      <div className="flex items-center justify-between mt-[15px] text-xs font-bold text-black border-t border-[#D9D9D9] pt-[15px] ml-5 mr-[41px] mb-[23px]">
+        <div className="flex items-center gap-[13px]">
+          <div>
+            <img src="/images/emoji.png" alt="emoji" />
+          </div>
+          <span>12</span>
         </div>
+        <span>13 Comments</span>
+        <span>2 Shares</span>
       </div>
       <div className="w-full pt-[23px] border-t border-[#D9D9D9] flex items-center justify-between pb-5 pl-5 pr-[41px] font-bold text-xs text-[#D9D9D9] ">
         <div className="flex items-center gap-4 cursor-pointer">
-          <div><ThumbsUpIcon/></div>
+          <div>
+            <ThumbsUpIcon />
+          </div>
           <span>Like</span>
         </div>
         <div className="flex items-center gap-4 cursor-pointer">
-          <div><CommentIcon/></div>
+          <div>
+            <CommentIcon />
+          </div>
           <span>Comment</span>
         </div>
         <div className="flex items-center gap-4 cursor-pointer">
-          <div><ShareIcon/></div>
+          <div>
+            <ShareIcon />
+          </div>
           <span>Share</span>
         </div>
       </div>
