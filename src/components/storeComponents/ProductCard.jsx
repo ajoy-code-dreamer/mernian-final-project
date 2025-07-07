@@ -6,9 +6,9 @@ import ProductCategory from './ProductCategory'
 import { Link } from 'react-router-dom'
 import CardButton from '../CardButton'
 
-const ProductCard = () => {
+const ProductCard = ({width='281px'}) => {
   return (
-    <div className='bg-white max-w-[400px] rounded-[15px]'> 
+    <div style={{width:width}} className='bg-white rounded-[15px]'> 
         <PhotoItem width='100%' height='180px' bgColor='#615DFA' rounded='15px 15px 0 0'/>
         <div className='relative'>
         <ProductPrice/>
