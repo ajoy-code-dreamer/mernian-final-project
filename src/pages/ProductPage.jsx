@@ -2,17 +2,92 @@ import React from "react";
 import Container from "../components/commonComponents/Container";
 import ProductCard from "../components/storeComponents/ProductCard";
 import CardButton from "../components/CardButton";
+import Button from "../components/Button";
 import PaginationArea from "../components/PaginationArea";
-import { FaStar } from "react-icons/fa";
+import { FaChevronDown, FaStar } from "react-icons/fa";
+import SearchIcon from "../icons/SearchIcon";
+import ArrowDown from "../icons/ArrowDown";
 
 const ProductPage = () => {
   return (
     <Container>
       <div className="pt-[23px] pb-[24px] font-[Poppins]">
-        <h5 className="text-[#AFB0C0] font-normal text-sm">BROWSE PRODUTS</h5>
+        <h5 className="text-[#AFB0C0] font-normal text-sm">BROWSE PRODUCTS</h5>
         <h3 className="text-[#24234B] font-bold text-2xl">Digital Items</h3>
       </div>
-      <div className="py-6 px-5 rounded-[7px] bg-white mb-5"></div>
+      <div className="py-6 px-5 rounded-[7px] bg-white mb-5 font-[Poppins] flex items-center">
+        <input
+          className="font-medium text-[17px] px-[15px] py-[10px] w-[300px] border border-[#D9D9D9] focus:outline-[#D9D9D9] rounded-[15px] mr-3"
+          type="text"
+          placeholder="Search items"
+        />
+        <button
+          type="search"
+          className="px-5 py-3 bg-[#23D2E2] rounded-[15px] mr-[19px] text-black"
+        >
+          <SearchIcon />
+        </button>
+
+        
+        <div className="relative">
+          <select
+            className="relative z-10 appearance-none px-5 py-[10px] w-[300px] border border-[#D9D9D9] rounded-[15px] text-black text-[17px] font-medium focus:outline-none mr-[19px]"
+            name=""
+            id=""
+          >
+            <option className=" text-black text-[17px] font-medium" value="">
+              Date Published 
+            </option>
+            <option className=" text-black text-[17px] font-medium" value="">
+              01-01-2025
+            </option>
+            <option className=" text-black text-[17px] font-medium" value="">
+              05-05-2025
+            </option>
+            <option className=" text-black text-[17px] font-medium" value="">
+              11-12-2025
+            </option>
+            <option className=" text-black text-[17px] font-medium" value="">
+              12-05-2025
+            </option>
+          </select>
+          <div className="absolute top-1/2 right-[39px] -translate-y-1/2 ">
+            <ArrowDown/>
+          </div>
+        </div>
+        <div className="relative">
+          <select
+            className="relative z-10 appearance-none px-5 py-[10px] w-[300px] border border-[#D9D9D9] rounded-[15px] text-black text-[17px] font-medium focus:outline-none mr-[19px]"
+            name=""
+            id=""
+          >
+            <option className=" text-black text-[17px] font-medium" value="">
+              Descending
+            </option>
+            <option className=" text-black text-[17px] font-medium" value="">
+              01-01-2025
+            </option>
+            <option className=" text-black text-[17px] font-medium" value="">
+              05-05-2025
+            </option>
+            <option className=" text-black text-[17px] font-medium" value="">
+              11-12-2025
+            </option>
+            <option className=" text-black text-[17px] font-medium" value="">
+              12-05-2025
+            </option>
+          </select>
+          <div className="absolute top-1/2 right-[39px] -translate-y-1/2 ">
+            <ArrowDown/>
+          </div>
+        </div>
+        <Button
+          text="Apply Filters"
+          paddingX="16px"
+          paddingY="11px"
+          fontWeight="500"
+        />
+      </div>
       <div className="flex gap-[14px] mb-[30px]">
         <div className="h-max pb-[26px] min-w-[284px] pt-[30px] px-[15px] rounded-[15px] bg-white font-[Poppins]">
           <h4 className="text-black text-sm font-bold mb-[13px]">Categories</h4>
@@ -67,11 +142,11 @@ const ProductPage = () => {
             <div className="flex justify-between items-center">
               <div className="flex items-center">
                 <span className="flex gap-[3px] text-[#FCE730]">
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
                 </span>
                 <span className="text-[#3E3F5E] pl-[11px] font-bold">4+</span>
               </div>
@@ -80,11 +155,11 @@ const ProductPage = () => {
             <div className="flex justify-between items-center">
               <div className="flex items-center">
                 <span className="flex gap-[3px] text-[#FCE730]">
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
                 </span>
                 <span className="text-[#3E3F5E] pl-[11px] font-bold">4+</span>
               </div>
@@ -93,11 +168,11 @@ const ProductPage = () => {
             <div className="flex justify-between items-center">
               <div className="flex items-center">
                 <span className="flex gap-[3px] text-[#FCE730]">
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
                 </span>
                 <span className="text-[#3E3F5E] pl-[11px] font-bold">4+</span>
               </div>
@@ -106,11 +181,11 @@ const ProductPage = () => {
             <div className="flex justify-between items-center">
               <div className="flex items-center">
                 <span className="flex gap-[3px] text-[#FCE730]">
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
+                  <FaStar />
                 </span>
                 <span className="text-[#3E3F5E] pl-[11px] font-bold">4+</span>
               </div>
