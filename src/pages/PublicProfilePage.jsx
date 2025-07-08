@@ -16,12 +16,12 @@ const PublicProfilePage = () => {
         <ProfileBanner />
       </div>
       <div className="flex mt-[33px] gap-[15px]">
-        <div className="flex gap-[15px] flex-col">
+        <div className="flex gap-[15px] flex-col w-[24%]">
           <AboutMe />
           <PhotosCard />
           <VideosCard />
         </div>
-        <div className="flex gap-[15px] flex-col">
+        <div className="flex gap-[15px] flex-col w-[48%]">
           <PostCard />
           <PostCard />
           <PostCard />

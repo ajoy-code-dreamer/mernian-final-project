@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutMe = () => {
   return (
-    <div className='max-w-[283px] pl-[27px] pr-[26px] py-[29px] bg-white rounded-[15px] font-"Poppins"'>
+    <div className='w-full pl-[27px] pr-[26px] py-[29px] bg-white rounded-[15px] font-"Poppins"'>
       <div className="flex items-center justify-between mb-[29px] font-bold text-[#3E3F5E] text-sm">
         <h3>About Me</h3>
         <span className="cursor-pointer">...</span>

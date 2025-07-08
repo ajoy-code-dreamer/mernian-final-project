@@ -5,6 +5,7 @@ import {
   FaLayerGroup,
   FaNewspaper,
   FaSignOutAlt,
+  FaUser,
   FaUserFriends,
 } from "react-icons/fa";
 import { FaHandsAslInterpreting } from "react-icons/fa6";
@@ -12,6 +13,7 @@ import { Link } from "react-router-dom";
 import FriendProfileDetails from "../friendPageComponents/FriendProfileDetails";
 import ProfileSummery from "../publicProfilePageComponents/ProfileSummery";
 import { IoStorefront } from "react-icons/io5";
+import { RiShoppingBag2Fill } from "react-icons/ri";
 
 
 const LeftProfileBar = () => {
@@ -50,6 +52,14 @@ const LeftProfileBar = () => {
             <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 active:text-white active:bg-[#23D2E2] rounded-[10px] cursor-pointer ">
               <Link className="flex items-center gap-7" to="/">
                 <span className="text-xl">
+                  <FaUser />
+                </span>
+                About
+              </Link>
+            </li>
+            <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 active:text-white active:bg-[#23D2E2] rounded-[10px] cursor-pointer ">
+              <Link className="flex items-center gap-7" to="/">
+                <span className="text-xl">
                   <FaLayerGroup />
                 </span>
                 Groups
@@ -61,6 +71,15 @@ const LeftProfileBar = () => {
                   <IoStorefront />
                 </span>
                 Store
+              </Link>
+            </li>
+            <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 active:text-white active:bg-[#23D2E2] rounded-[10px] cursor-pointer ">
+              <Link className="flex items-center gap-7" to="/store">
+                <span className="text-xl">
+                  <RiShoppingBag2Fill />
+
+                </span>
+                Product
               </Link>
             </li>
             <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 active:text-white active:bg-[#23D2E2] rounded-[10px] cursor-pointer ">

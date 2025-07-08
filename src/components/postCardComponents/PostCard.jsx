@@ -25,7 +25,7 @@ const PostCard = ({ children }) => {
     };
 
   return (
-    <div className='w-[585px] rounded-[15px] bg-white font-["Poppins"]'>
+    <div className='w-full rounded-[15px] bg-white font-["Poppins"]'>
       <div className="py-[15px] pl-5 pr-[41px] ">
         <div className="flex items-center justify-between mb-[23px]">
           <div className="flex items-center gap-3">
