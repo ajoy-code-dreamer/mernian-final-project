@@ -7,10 +7,15 @@ import PaginationArea from "../components/PaginationArea";
 import { FaChevronDown, FaStar } from "react-icons/fa";
 import SearchIcon from "../icons/SearchIcon";
 import ArrowDown from "../icons/ArrowDown";
+import StoreBanner from "../components/storeComponents/StoreBanner";
 
 const ProductPage = () => {
   return (
+    
     <Container>
+      <div className='mt-9'>
+        <StoreBanner/>
+      </div>
       <div className="pt-[23px] pb-[24px] font-[Poppins]">
         <h5 className="text-[#AFB0C0] font-normal text-sm">BROWSE PRODUCTS</h5>
         <h3 className="text-[#24234B] font-bold text-2xl">Digital Items</h3>
