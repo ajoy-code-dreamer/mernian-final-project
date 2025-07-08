@@ -34,7 +34,7 @@ const LeftProfileBar = () => {
         <div className="mt-16 pr-2 pl-4">
           <ul className="font-['Poppins'] text-sm font-semibold flex flex-col gap-1">
             <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 active:text-white active:bg-[#23D2E2] rounded-[10px] cursor-pointer ">
-              <Link className="flex items-center gap-7" to="/">
+              <Link className="flex items-center gap-7" to="/news-feed">
                 <span className="text-xl">
                   <FaNewspaper />
                 </span>
@@ -74,7 +74,7 @@ const LeftProfileBar = () => {
               </Link>
             </li>
             <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 active:text-white active:bg-[#23D2E2] rounded-[10px] cursor-pointer ">
-              <Link className="flex items-center gap-7" to="/store">
+              <Link className="flex items-center gap-7" to="/product">
                 <span className="text-xl">
                   <RiShoppingBag2Fill />
 
