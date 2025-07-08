@@ -3,6 +3,7 @@ import Container from "../components/commonComponents/Container";
 import ProductCard from "../components/storeComponents/ProductCard";
 import CardButton from "../components/CardButton";
 import PaginationArea from "../components/PaginationArea";
+import { FaStar } from "react-icons/fa";
 
 const ProductPage = () => {
   return (
@@ -13,7 +14,7 @@ const ProductPage = () => {
       </div>
       <div className="py-6 px-5 rounded-[7px] bg-white mb-5"></div>
       <div className="flex gap-[14px] mb-[30px]">
-        <div className=" min-w-[284px] pt-[30px] px-[15px] rounded-[15px] bg-white font-[Poppins]">
+        <div className="h-max pb-[26px] min-w-[284px] pt-[30px] px-[15px] rounded-[15px] bg-white font-[Poppins]">
           <h4 className="text-black text-sm font-bold mb-[13px]">Categories</h4>
           <ul className="flex flex-col gap-[10px] font-[Poppins] font-medium text-[#AFB0C0]">
             <li className="flex justify-between">
@@ -55,6 +56,67 @@ const ProductPage = () => {
             rounded="11px"
             bgColor="#23D2E2"
           />
+          <h4 className="text-black text-sm font-bold mt-[39px] mb-[22px]">
+            Reviews
+          </h4>
+          <div className="pr-[22px] font-[Poppins] text-sm flex flex-col gap-[10px]">
+            <div className="flex justify-between items-center">
+              <span className="text-[#45437F] font-bold">All reviews</span>
+              <span className="text-[#23D2E2] font-normal">1207</span>
+            </div>
+            <div className="flex justify-between items-center">
+              <div className="flex items-center">
+                <span className="flex gap-[3px] text-[#FCE730]">
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                </span>
+                <span className="text-[#3E3F5E] pl-[11px] font-bold">4+</span>
+              </div>
+              <span className="text-[#23D2E2] font-normal">1207</span>
+            </div>
+            <div className="flex justify-between items-center">
+              <div className="flex items-center">
+                <span className="flex gap-[3px] text-[#FCE730]">
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                </span>
+                <span className="text-[#3E3F5E] pl-[11px] font-bold">4+</span>
+              </div>
+              <span className="text-[#23D2E2] font-normal">1207</span>
+            </div>
+            <div className="flex justify-between items-center">
+              <div className="flex items-center">
+                <span className="flex gap-[3px] text-[#FCE730]">
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                </span>
+                <span className="text-[#3E3F5E] pl-[11px] font-bold">4+</span>
+              </div>
+              <span className="text-[#23D2E2] font-normal">1207</span>
+            </div>
+            <div className="flex justify-between items-center">
+              <div className="flex items-center">
+                <span className="flex gap-[3px] text-[#FCE730]">
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                </span>
+                <span className="text-[#3E3F5E] pl-[11px] font-bold">4+</span>
+              </div>
+              <span className="text-[#23D2E2] font-normal">1207</span>
+            </div>
+          </div>
         </div>
         <div className="flex justify-between gap-5 flex-wrap">
           <ProductCard width="272px" />
