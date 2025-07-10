@@ -50,7 +50,7 @@ const LeftProfileBar = () => {
               </Link>
             </li>
             <li className="w-full pt-[15px] pb-[14px] text-[#AFB0C0] px-5 hover:bg-[#23D2E2] hover:text-white duration-300 active:text-white active:bg-[#23D2E2] rounded-[10px] cursor-pointer ">
-              <Link className="flex items-center gap-7" to="/">
+              <Link className="flex items-center gap-7" to="/about">
                 <span className="text-xl">
                   <FaUser />
                 </span>
