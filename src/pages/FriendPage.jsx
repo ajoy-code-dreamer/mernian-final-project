@@ -5,6 +5,7 @@ import Container from "../components/commonComponents/Container";
 import ProfileBanner from "../components/publicProfilePageComponents/ProfileBanner";
 import AddFriendCard from "../components/friendPageComponents/AddFriendCard";
 import PaginationArea from "../components/PaginationArea";
+import PageHeading from "../components/commonComponents/PageHeading";
 
 
 const FriendPage = () => {
@@ -13,12 +14,7 @@ const FriendPage = () => {
       <div>
         <ProfileBanner />
       </div>
-      <div className="font-[Poppins] mt-[62px] mb-[39px]">
-        <h6 className=" text-[#AFB0C0] text-sm font-normal mb-1">
-          BROWSE ABM SHAWON
-        </h6>
-        <h4 className="text-[#24234B] text-xl font-normal">Friends 82</h4>
-      </div>
+      <PageHeading/>
       <div className="w-full bg-white rounded-[10px] px-[25px] pt-[22px] pb-[15px] mb-[31px]">
         <div className="w-[717px] relative">
           <input

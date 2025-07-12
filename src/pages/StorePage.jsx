@@ -7,9 +7,7 @@ import PaginationArea from '../components/PaginationArea'
 const StorePage = () => {
   return (
     <Container>
-      <div className='mt-9'>
-        <StoreBanner/>
-      </div>
+      <StoreBanner/>
       <div className='font-[Poppins] text-black mt-[22px] mb-5'>
         <h5 className='font-bold mb-[23px]'>Categories</h5>
         <ul className='flex items-center gap-[15px] p-[14px] bg-white rounded-[7px] font-medium text-sm text-black cursor-pointer'>
