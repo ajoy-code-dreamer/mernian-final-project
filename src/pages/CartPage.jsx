@@ -5,6 +5,7 @@ import PageHeading from "../components/commonComponents/PageHeading";
 import CartItem from "../components/storeComponents/CartItem";
 import RedeemPromo from "./RedeemPromo";
 import Button from "../components/Button";
+import { Link } from "react-router-dom";
 
 const CartPage = () => {
   return (
@@ -46,8 +47,11 @@ const CartPage = () => {
             </li>
           </ul>
           <div className="flex flex-col justify-center items-center gap-[10px] mx-1 w-full">
-            <Button bgColor="#23D2E2" width='100%' text="Proccecd to checkout"  rounded="15px"  />
+            <Button bgColor="#23D2E2" width='100%' text=""  rounded="15px"  >
+              <Link to='/checkout' target="blank">Proccecd to checkout</Link>
+              </Button>
             <Button color="#AFB0C0" bgColor="transparent" width='100%' text="Update cart" rounded="15px" borderColor='#D9D9D9' />
+              
           </div>
         </div>
       </div>

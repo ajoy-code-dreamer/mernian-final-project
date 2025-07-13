@@ -24,7 +24,7 @@ const ProductPage = () => {
         />
         <button
           type="search"
-          className="px-5 py-3 bg-[#23D2E2] rounded-[15px] mr-[19px] text-black"
+          className="px-5 py-3 bg-[#23D2E2] rounded-[15px] mr-[19px] text-black cursor-pointer"
         >
           <SearchIcon />
         </button>
