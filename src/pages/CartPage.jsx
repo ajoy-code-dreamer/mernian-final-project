@@ -48,7 +48,7 @@ const CartPage = () => {
           </ul>
           <div className="flex flex-col justify-center items-center gap-[10px] mx-1 w-full">
             <Button bgColor="#23D2E2" width='100%' text=""  rounded="15px"  >
-              <Link to='/checkout' target="blank">Proccecd to checkout</Link>
+              <Link to='/checkout' target="">Proccecd to checkout</Link>
               </Button>
             <Button color="#AFB0C0" bgColor="transparent" width='100%' text="Update cart" rounded="15px" borderColor='#D9D9D9' />
               
