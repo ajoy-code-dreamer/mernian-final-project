@@ -22,7 +22,7 @@ const CartItem = () => {
       <div>
         <input
           placeholder="1"
-          className="font-[Poppins] font-medium text-[#3E3F5E] text-[17px] pl-[44px] py-[11px] w-[96px] h-[48px] rounded-[15px] border border-[#D9D9D9] mr-[111px]"
+          className="font-[Poppins] font-medium text-[#3E3F5E] text-[17px] pr-[11px] pl-[44px] py-[11px] w-[96px] h-[48px] rounded-[15px] border border-[#D9D9D9] mr-[111px]"
           type="number"
         />
       </div>
