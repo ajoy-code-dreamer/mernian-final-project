@@ -8,6 +8,7 @@ const VideoItem = ({
   width = "100%",
   height = "100px",
   rounded = "15px",
+  playCircleSize='40px'
 }) => {
   return (
     <div
@@ -17,12 +18,10 @@ const VideoItem = ({
         height: height,
         borderRadius: rounded,
       }}
-      className={` w-[${width}] h-[${height}] rounded-[${rounded}] cursor-pointer `}
+      className={` w-[${width}] h-[${height}] rounded-[${rounded}] cursor-pointer relative`}
     >
       {children}
-      <div className="flex items-center justify-center h-full w-full">
         <PlayIcon/>
-      </div>
     </div>
   );
 };

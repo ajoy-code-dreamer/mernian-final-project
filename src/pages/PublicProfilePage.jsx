@@ -27,9 +27,7 @@ const PublicProfilePage = () => {
           <PostCard />
           <PostCard>
             <VideoItem height="349px" bgColor="#7A77FD" rounded="0">
-              <div className="flex items-center justify-center h-full w-full">
-                <PlayIcon circle="100px" borderWidht="4px" textSize="20px"/>
-              </div>
+                <PlayIcon circle="100px" borderWidth="4px" textSize="20px"/>
             </VideoItem>
           </PostCard>
           <PostCard>
