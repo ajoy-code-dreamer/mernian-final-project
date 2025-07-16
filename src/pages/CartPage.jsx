@@ -50,7 +50,7 @@ const CartPage = () => {
             <Button bgColor="#23D2E2" width='100%' text=""  rounded="15px"  >
               <Link to='/checkout' target="">Proccecd to checkout</Link>
               </Button>
-            <Button color="#AFB0C0" bgColor="transparent" width='100%' text="Update cart" rounded="15px" borderColor='#D9D9D9' />
+            <Button color="#AFB0C0" borderWidth="1px" bgColor="transparent" width='100%' text="Update cart" rounded="15px" borderColor='#D9D9D9' />
               
           </div>
         </div>
