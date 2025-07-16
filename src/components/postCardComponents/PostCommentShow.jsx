@@ -7,7 +7,7 @@ import ShareIcon from "../../icons/ShareIcon";
 
 const PostCommentShow = () => {
   return (
-    <div className="w-full px-[26px] py-[13px] duration-300 ">
+    <div className="w-full px-[26px] py-[13px] duration-300 border-t border-[#D9D9D9]">
       <div>
         <div className="flex items-center gap-3">
           <PostCardProfilePicture
