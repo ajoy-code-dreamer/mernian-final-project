@@ -1,68 +1,76 @@
-import React, { useEffect, useRef, useState, } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import ThumbsUpIcon from "../../icons/ThumbsUpIcon";
 import ShareIcon from "../../icons/ShareIcon";
 import CommentIcon from "../../icons/CommentIcon";
 import { Link } from "react-router-dom";
+import PostCardProfilePicture from "./PostCardProfilePicture";
+import PostCardProfileName from "./PostCardProfileName";
+import PostCommentShow from "./PostCommentShow";
 
 const PostCard = ({ children }) => {
   const [editPostOpen, setEditPostOpen] = useState(false);
   let editPostRef = useRef();
 
   useEffect(() => {
-      let clickOutSide = (event) => {
-        if (
-          editPostRef.current &&
-          !editPostRef.current.contains(event.target)
-        ) {
-          setEditPostOpen(false);
-        }
-      };
-      document.addEventListener("click", clickOutSide);
-    }, []);
-  
-    let handleEditPost = () => {
-      setEditPostOpen(!editPostOpen);
+    let clickOutSide = (event) => {
+      if (editPostRef.current && !editPostRef.current.contains(event.target)) {
+        setEditPostOpen(false);
+      }
     };
+    document.addEventListener("click", clickOutSide);
+  }, []);
+
+  let handleEditPost = () => {
+    setEditPostOpen(!editPostOpen);
+  };
+
+  // ======= comment show operation ======
+  let [isCommentShow, setIsCommentShow] = useState(false);
+
+  let handelCommentShow = () => {
+    setIsCommentShow(!isCommentShow);
+  };
+
+  // ======= comment show operation ======
 
   return (
     <div className='w-full rounded-[15px] bg-white font-["Poppins"]'>
       <div className="py-[15px] pl-5 pr-[41px] ">
         <div className="flex items-center justify-between mb-[23px]">
           <div className="flex items-center gap-3">
-            <div className="w-[50px] h-[50px] rounded-full bg-[#615DFA] border-[3px] border-[#D9D9D9]">
-              {/* <img src="" alt="image" /> */}
-            </div>
+            <PostCardProfilePicture />
             <div>
-              <h5 className="text-black font-bold text-sm">
-                A B M Shawon Islam
-              </h5>
+              <PostCardProfileName />
               <p className="text-[#AFB0C0] font-medium text-xs">
                 29 minutes ago
               </p>
             </div>
           </div>
           <div ref={editPostRef} className="relative">
-          <button  className="font-normal text-[30px] text-black cursor-pointer" onClick={handleEditPost}>
-            ...
-          </button>
-          {editPostOpen && (
-            <div className="w-[140px] bg-white text-black rounded-lg shadow-lg p-4 z-10 absolute top-12 right-0 duration-300">
-              <ul className="font-['Poppins'] text-xs font-normal">
-                <li className="px-2 py-2 rounded-lg duration-300 hover:bg-[#F7F7FB]">
-                  <Link>Edit Post</Link>
-                </li>
-                <li className="px-2 py-2 rounded-lg duration-300 hover:bg-[#F7F7FB]">
-                  <Link>Delete Post</Link>
-                </li>
-                <li className="px-2 py-2 rounded-lg duration-300 hover:bg-[#F7F7FB]">
-                  <Link>Report Post</Link>
-                </li>
-                <li className="px-2 py-2 rounded-lg duration-300 hover:bg-[#F7F7FB]">
-                  <Link>Report Author</Link>
-                </li>
-              </ul>
-            </div>
-          )}
+            <button
+              className="font-normal text-[30px] text-black cursor-pointer"
+              onClick={handleEditPost}
+            >
+              ...
+            </button>
+            {editPostOpen && (
+              <div className="w-[140px] bg-white text-black rounded-lg shadow-lg p-4 z-10 absolute top-12 right-0 duration-300">
+                <ul className="font-['Poppins'] text-xs font-normal">
+                  <li className="px-2 py-2 rounded-lg duration-300 hover:bg-[#F7F7FB]">
+                    <Link>Edit Post</Link>
+                  </li>
+                  <li className="px-2 py-2 rounded-lg duration-300 hover:bg-[#F7F7FB]">
+                    <Link>Delete Post</Link>
+                  </li>
+                  <li className="px-2 py-2 rounded-lg duration-300 hover:bg-[#F7F7FB]">
+                    <Link>Report Post</Link>
+                  </li>
+                  <li className="px-2 py-2 rounded-lg duration-300 hover:bg-[#F7F7FB]">
+                    <Link>Report Author</Link>
+                  </li>
+                </ul>
+              </div>
+            )}
           </div>
         </div>
         <p className="text-black text-xs font-normal">
@@ -95,7 +103,9 @@ const PostCard = ({ children }) => {
           <div>
             <CommentIcon />
           </div>
-          <span>Comment</span>
+          <span onClick={handelCommentShow} className="duration-300">
+            Comment
+          </span>
         </div>
         <div className="flex items-center gap-4 cursor-pointer">
           <div>
@@ -104,6 +114,7 @@ const PostCard = ({ children }) => {
           <span>Share</span>
         </div>
       </div>
+      <div className="duration-300">{isCommentShow && <PostCommentShow />}</div>
     </div>
   );
 };
