@@ -96,15 +96,37 @@ const PostCard = ({ children }) => {
         <span>2 Shares</span>
       </div>
       <div className="w-full pt-[23px] border-t border-[#D9D9D9] flex items-center justify-between pb-5 pl-5 pr-[41px] font-bold text-xs text-[#D9D9D9] ">
-        <div className="flex items-center gap-4 cursor-pointer ">
+        <div className="flex items-center gap-4 cursor-pointer relative group">
           <div>
             <ThumbsUpIcon />
           </div>
           <span>Like</span>
-          <div>
-            <abbr title="">
-              <LikeReact/>
+          <div className="scale-0 group-hover:scale-100 duration-300 group-active:scale-100 p-3 w-[408px] rounded-[50px] bg-white shadow-lg flex justify-between items-center gap-2 absolute left-[-20px] top-[-140px]">
+            <abbr className="shrink-0" title="Like">
+              <img src="images/likeReact.png" alt="emoji" />
             </abbr>
+            <abbr className="shrink-0" title="Love">
+              <img src="images/loveReact.png" alt="emoji" />
+            </abbr>
+            <abbr className="shrink-0" title="Dislike">
+              <img src="images/dislikeReact.png" alt="emoji" />
+            </abbr>
+            <abbr className="shrink-0" title="Happy">
+              <img src="images/happyReact.png" alt="emoji" />
+            </abbr>
+            <abbr className="shrink-0" title="Funny">
+              <img src="images/funnyReact.png" alt="emoji" />
+            </abbr>
+            <abbr className="shrink-0" title="Wow">
+              <img src="images/wowReact.png" alt="emoji" />
+            </abbr>
+            <abbr className="shrink-0" title="Angry">
+              <img src="images/angryReact.png" alt="emoji" />
+            </abbr>
+            <abbr className="shrink-0" title="Sad">
+              <img src="images/sadReact.png" alt="emoji" />
+            </abbr>
+            
           </div>
         </div>
         <div className="flex items-center gap-4 cursor-pointer">
