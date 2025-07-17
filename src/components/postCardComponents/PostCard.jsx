@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import PostCardProfilePicture from "./PostCardProfilePicture";
 import PostCardProfileName from "./PostCardProfileName";
 import PostCommentShow from "./PostCommentShow";
+import LikeReact from "../../icons/LikeReact";
+
+
 
 const PostCard = ({ children }) => {
   const [editPostOpen, setEditPostOpen] = useState(false);
@@ -93,11 +96,16 @@ const PostCard = ({ children }) => {
         <span>2 Shares</span>
       </div>
       <div className="w-full pt-[23px] border-t border-[#D9D9D9] flex items-center justify-between pb-5 pl-5 pr-[41px] font-bold text-xs text-[#D9D9D9] ">
-        <div className="flex items-center gap-4 cursor-pointer">
+        <div className="flex items-center gap-4 cursor-pointer ">
           <div>
             <ThumbsUpIcon />
           </div>
           <span>Like</span>
+          <div>
+            <abbr title="">
+              <LikeReact/>
+            </abbr>
+          </div>
         </div>
         <div className="flex items-center gap-4 cursor-pointer">
           <div>

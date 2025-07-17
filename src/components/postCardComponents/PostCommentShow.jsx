@@ -1,11 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import PostCardProfilePicture from "./PostCardProfilePicture";
 import PostCardProfileName from "./PostCardProfileName";
 import ThumbsUpIcon from "../../icons/ThumbsUpIcon";
 import CommentIcon from "../../icons/CommentIcon";
 import ShareIcon from "../../icons/ShareIcon";
+import SingleCommentItem from "./SingleCommentItem";
 
 const PostCommentShow = () => {
+  let [isMoreCommentShow, setIsMoreCommentShow] = useState(false)
+
+  let handleMoreComment = ()=>{
+    setIsMoreCommentShow(!isMoreCommentShow)
+  }
+
   return (
     <>
       <div className="w-full px-[26px] border-t border-[#D9D9D9]">
@@ -68,8 +75,17 @@ const PostCommentShow = () => {
           </div>
         </div>
       </div>
+      <div>
+        {isMoreCommentShow &&
+          <div className="px-[26px]">
+            <SingleCommentItem/>
+            <SingleCommentItem/>
+            <SingleCommentItem/>
+          </div>
+          }
+      </div>
       <div className="py-4 px[-46px] cursor-pointer border-t border-b border-[#D9D9D9]">
-        <p className="text-center font-['Poppins'] font-normal text-xs text-[#3E3F5E]">
+        <p onClick={handleMoreComment} className="text-center font-['Poppins'] font-normal text-xs text-[#3E3F5E]">
           Load more comments<span className="pl-1 text-[#01C7D9]">9+</span>
         </p>
       </div>
